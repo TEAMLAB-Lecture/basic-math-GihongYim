@@ -105,13 +105,13 @@ def get_median(number_list):
     if num_len % 2 != 0:
         median = number_list[int(num_len/2)]
     else:
-        median = (number_list[num_len/2 - 1] + number_list[num_len/2])
+        median = (number_list[int(num_len/2) - 1] + number_list[int(num_len/2)])
     return median
 
-ex = [10, 33, 22, 99, 33]
+# ex = [10, 33, 22, 99, 33]
 
-print(get_greatest(ex))
-print(get_smallest(ex))
-print(get_mean(ex))
-print(get_median(ex))
+# print(get_greatest(ex))
+# print(get_smallest(ex))
+# print(get_mean(ex))
+# print(get_median(ex))
 
