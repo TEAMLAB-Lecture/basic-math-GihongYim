@@ -48,7 +48,7 @@ def get_smallest(number_list):
             >>> bm.get_smallest(number_list)
             11
     """
-    smallest_number = number_list
+    smallest_number = number_list[0]
     for x in number_list:
         if x < smallest_number:
             smallest_number= x
@@ -107,3 +107,11 @@ def get_median(number_list):
     else:
         median = (number_list[num_len/2 - 1] + number_list[num_len/2])
     return median
+
+ex = [10, 33, 22, 99, 33]
+
+print(get_greatest(ex))
+print(get_smallest(ex))
+print(get_mean(ex))
+print(get_median(ex))
+
