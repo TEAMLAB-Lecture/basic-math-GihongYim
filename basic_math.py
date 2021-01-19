@@ -102,10 +102,11 @@ def get_median(number_list):
     """
     median = None
     num_len = len(number_list)
+    number_list.sort()
     if num_len % 2 != 0:
         median = number_list[int(num_len/2)]
     else:
-        median = (number_list[int(num_len/2) - 1] + number_list[int(num_len/2)])
+        median = (number_list[int(num_len/2) - 1] + number_list[int(num_len/2)]) / 2
     return median
 
 # ex = [10, 33, 22, 99, 33]
